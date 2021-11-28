@@ -25,6 +25,7 @@
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>  
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -38,7 +39,7 @@
       crossorigin="anonymous"
     ></script>
     <!--CSS-->
-    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <style>
     :root {
@@ -55,7 +56,7 @@
     }
 
     h1 {
-      font-family: "Yeseva One", cursive;
+      font-family: "Dancing Script", cursive;
       color: rgba(240, 9, 174, 0.8);
       font-size: 60px;
       word-spacing: 1px;
@@ -149,56 +150,82 @@
     .padding-top {
       padding-top: 15px;
     }
+    .navbar-brand {
+  font-family: "Dancing Script", cursive;
+  color: var(--primary-color);
+}
+.dropdown-item {
+  background-color: lightyellow;
+  color: rgba(240, 9, 174, 0.8);
+}
+.dropdown-item:hover {
+  background-color: lightyellow;
+  color: var(--secondary-color);
+}
+
   </style>
   <body>
-    <nav
+   <nav
       class="navbar navbar-dark text-white navbar-expand-lg fixed-top"
       style="background-color: rgba(240, 9, 174, 0.8)"
     >
-      <div class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="index.html"
-              >Home</a
-            >
-            <a class="nav-link" href="about.html">About Me</a>
-            <a class="nav-link" href="projects.html">Projects</a>
-            <a class="nav-link" href="contact.html">Contact Me</a>
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Bri Schmer</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                
+                <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            About
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="about.html">About Bri</a></li>
+            <li><a class="dropdown-item" href="about.html">Skills</a></li>
+            <li><a class="dropdown-item" href="more.html">Additional Certifications</a></li>
+            
+          </ul>
+                <li class="nav-item">
+                  <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </div>
-    </nav>
+        </nav>
     <div class="text-container">
       <h1>Contact Bri</h1>
-      <h3></h3>
+    
+      <p><h3>Connect with me via LinkedIn, GitHub or Email</h3>
     </div>
-    <a href="about.html"> <img src="bri.png" class="img-thumbnail rounded w-25 p-3"/></a>
-
-    <footer>
+    
       <a href="https://www.linkedin.com/in/brischmer/" target="_blank"
-        ><i class="fab fa-linkedin icon"></i
-      ></a>
+        ><i class="fab fa-linkedin icon-big"></i>LinkedIn</a>
       <a href="https://github.com/yippieeitsbri" target="_blank"
-        ><i class="fab fa-github-square icon"></i
-      ></a>
+        ><i class="fab fa-github-square icon-big"></i>GitHub</a>
       <a href="mailto:brianne.schmer613@gmail.com" target="_blank"
-        ><i class="fas fa-at icon"></i
-      ></a>
-      <p>
+        ><i class="fas fa-at icon-big"></i>Email</a>
+
+    <br><br>
+    
+    <p><h3>Or Work with Bri</h3>
+    <i class="fas fa-laptop-code icon-big"></i>
+    <a href="#" class="btn-btn-primary">→</a>
+
+      <footer><p>
         This is an open source code by
         <a
-          href="https://github.com/yippieeitsbri/portfolio-project"
+          href="https://github.com/yippieeitsbri"
           class="project-link"
           target="_blank"
           >Bri Schmer</a

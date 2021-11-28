@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Emily is a Front-end engineer based in Austin, TX. She is skilled in HTML, CSS, and Javascript.">
+    <meta name="description" content="Bri is a Front-end engineer based in Orange County, CA. She is skilled in HTML, CSS, and Javascript.">
     <title>Front-End Developer: Bri Schmer</title>
     <!---Tab Icon-->
     <link rel="icon" href="images/tabicon.png" />
@@ -32,7 +32,7 @@
       crossorigin="anonymous"
     ></script>
     <!--CSS-->
-    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <style>
       :root {
@@ -49,7 +49,7 @@ body {
 }
 
 h1 {
-  font-family: "Yeseva One", cursive;
+  font-family: "Dancing Script", cursive;
   color: rgba(240, 9, 174, 0.8);
   font-size: 60px;
   word-spacing: 1px;
@@ -105,6 +105,7 @@ footer {
 .icon-big {
   color: var(--primary-color);
   padding: 3px;
+  
 }
 .icon:hover,
 .icon-big:hover {
@@ -139,129 +140,179 @@ footer {
   max-width: 100%;
   height: auto;
 }
-
+.title {
+  color: rgba(240, 9, 174, 0.8);
+      text-align: center;
+      font-size: 15px;
+      padding-top: 15px;
+    }
 .padding-top {
   padding-top: 15px;
 }
-
+.navbar-brand {
+  font-family: "Dancing Script", cursive;
+  color: var(--primary-color);
+}
+.dropdown-item {
+  background-color: lightyellow;
+  color: rgba(240, 9, 174, 0.8);
+}
+.dropdown-item:hover {
+  background-color: lightyellow;
+  color: var(--secondary-color);
+}
+.about{
+  color: black;
+  font-size: 15px;
+}
+.skills {
+  color: black;
+}
+@media (max-width: 576px) {
+      img {
+        width: 50%;
+        max-height: 75vh;
+        min-width: 0;
+    }
+  }
   </style>
   <body>
     <nav
       class="navbar navbar-dark text-white navbar-expand-lg fixed-top"
       style="background-color: rgba(240, 9, 174, 0.8)"
     >
-      <div class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link" aria-current="page" href="index.html">Home</a>
-            <a class="nav-link active" href="about.html">About Me</a>
-            <a class="nav-link" href="projects.html">Projects</a>
-            <a class="nav-link" href="contact.html">Contact Me</a>
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Bri Schmer</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                
+                <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            About
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="about.html">About Bri</a></li>
+            <li><a class="dropdown-item" href="about.html#skills">Skills</a></li>
+            <li><a class="dropdown-item" href="more.html">Additional Certifications</a></li>
+            
+          </ul>
+                <li class="nav-item">
+                  <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </div>
-    </nav>
+        </nav>
     <div class="text-container">
       <h1>About Me</h1>
     </div>
     <div class="container">
       <div class="row p-3">
         <div class="col-md">
-              <a href="about.html"> <img src="bri.png" class="img-thumbnail rounded w-75 p-3"/></a>
+              <a href="about.html"> 
+                <img src="bri.png" class="img-thumbnail rounded w-75 p-3"/></a>
 
         </div>
         <div class="col-md">
-          <h2>Hello, I'm Bri Schmer</h2>
+          <h2>Hi, I'm Bri Schmer</h2>
           <h3>Front End Web Developer in Orange County, CA</h3>
-          <p class="p-section">
-            I have lived in Southern California my entire life and grew up in the beauty industry as well as tech. I've always loved tech and found myself in many tech-jobs. Since COVID, I have been unemployed and trying to grow myself in the tech world and I decided to look into coding, as it has always been something I have been curious about and have a basic knowledge of already.
+          <p class="about">
+            I am born and raised in Southern California where I grew up in the beauty industry as well as tech. I've always loved tech and found myself in many tech-jobs. Since COVID, I have been unemployed and trying to grow myself in the tech world and I decided to look into coding, as it has always been something I have been curious about and have a basic knowledge of already.
           </p>
-          <p class="p-section">
-            I found out about SheCodes through Google searches of coding boot camps and I liked what they offered. I decided to give it a go, and have loved every minute of it since! 
+          <p class="about">
+            I found out about <a href="shecodes.io" class="project-link" target="_blank">SheCodes</a> through extensive Google searches of coding bootcamps. I liked what they offered so I decided to give it a go, and have loved every minute of it since! 
           </p>
-          <p class="p-section">
-            My dream is to develop a web designing company with digital marketing as a subscription type service. I plan to move to North Carolina by the end of 2021 and be with my long time boyfriend, where we will get all the cuddles from his golden lab, Kali.
+          <p class="about">
+            My dream is to develop a web design company with digital marketing and other virtual assistant like services. 
           </p>
           <p>
             <a href="projects.html" class="project-link" target="_blank">My Projects→</a>
           </p>
         </div>
       </div>
-      <div class="section-container">
-        <h2>Skills</h2>
+      
+       
+        <h2 id="skills">Skills</h2>
         <div class="container">
-          <div class="row align-items">
-            <div class="col">
-              <i class="fab fa-html5 icon-big"></i><br />
-              <p>HTML</p>
-            </div>
-            <div class="col">
-              <i class="fab fa-css3-alt icon-big"></i><br />
-              <p>CSS</p>
-            </div>
-            <div class="col">
-              <i class="fab fa-js-square icon-big"></i><br />
-              <p>JavaScript</p>
-            </div>
-          </div>
-          <div class="row align-items">
-            <div class="col">
-              <i class="fab fa-bootstrap icon-big"></i><br />
-              <p>Bootstrap</p>
-            </div>
-            <div class="col">
-              <i class="fas fa-code icon-big"></i><br />
-              <p>VS Code</p>
-            </div>
-            <div class="col">
-              <i class="fas fa-mobile-alt icon-big"></i><br />
-              <p>Responsive</p>
-            </div>
-          </div>
-          <div class="row align-items">
-            <div class="col">
-              <i class="fas fa-cogs icon-big"></i><br />
-              <p>API</p>
-            </div>
-            <div class="col">
-              <i class="fab fa-github icon-big"></i><br />
-              <p>GitHub</p>
-            </div>
-            <div class="col">
-              <i class="fas fa-server icon-big"></i><br />
-              <p>Hosting</p>
-            </div>
-          </div>
-          <div class="row align-items">
-            <div class="col">
-              <i class="fab fa-shopify icon-big"></i><br />
-              <p>Shopify</p>
-            </div>
-            <div class="col">
-              <i class="fab fa-google-drive icon-big"></i><br />
-              <p>Google Drive</p>
-            </div>
-            <div class="col">
-              <i class="fab fa-apple icon-big"></i><br />
-              <p>Mac OSX</p>
-            </div>
+        <div class="row">
+
+          <div class="col-6 col-sm-4">
+        <i class="fab fa-html5 icon-big"></i>
+              <p class="skills">HTML</p></div>
+
+        <div class="col-6 col-sm-4">
+          <i class="fab fa-css3-alt icon-big"></i>
+              <p class="skills">CSS</p></div>
+
+              <div class="col-6 col-sm-4">
+       <i class="fab fa-js-square icon-big"></i>
+              <p class="skills">JavaScript</p></div>
+
+              <div class="col-6 col-sm-4">
+        <i class="fab fa-bootstrap icon-big"></i>
+              <p class="skills">Bootstrap</p></div>
+
+              <div class="col-6 col-sm-4">
+        <i class="far fa-file-code icon-big"></i>
+              <p class="skills">VS Code</p></div>
+
+              <div class="col-6 col-sm-4">
+        <i class="fas fa-mobile-alt icon-big"></i>
+              <p class="skills">Responsive</p></div>
+
+              <div class="col-6 col-sm-4">
+         <i class="fas fa-code-branch icon-big"></i>
+              <p class="skills">API</p></div>
+
+            <div class="col-6 col-sm-4">
+              <i class="fab fa-github icon-big"></i>
+              <p class="skills">GitHub</p></div>
+
+            <div class="col-6 col-sm-4">
+              <i class="fas fa-wifi icon-big"></i>
+              <p class="skills">Hosting</p></div>
+
+           <div class="col-6 col-sm-4">
+              <i class="fas fa-th icon-big"></i>
+              <p class="skills">Flexbox</p></div>
+
+            <div class="col-6 col-sm-4">
+              <i class="fab fa-react icon-big"></i>
+              <p class="skills">React</p></div>
+
+            <div class="col-6 col-sm-4">
+              <i class="fab fa-codepen icon-big"></i>
+              <p class="skills">CodePen/Sandbox</p></div>
+
+          <div class="col-6 col-sm-4">
+              <i class="fas fa-search-location icon-big"></i>
+              <p class="skills">SEO</p></div>
+
+            <div class="col-6 col-sm-4">
+              <i class="fab fa-google-drive icon-big"></i>
+              <p class="skills">Google Drive</p></div>
+
+           <div class="col-6 col-sm-4">
+              <i class="fab fa-apple icon-big"></i>
+              <p class="skills">Mac OSX</p></div>
+              
             
-          </div>
-        </div>
-      </div>
+            </div>
+              </div>
       <div class="section-container">
-        <h2>Certificates</h2>
+        <h2>SheCodes Certifications</h2>
         <p>
             <a href="more.html" class="project-link" target="_blank">More Certifications→</a>
           </p>
@@ -269,13 +320,23 @@ footer {
         <div class="container">
           <div class="row align-items">
             <div class="col-sm p-3">
+              <a href="https://www.shecodes.io/certificates/75cbb533718df7449212ffde3456106c" 
+              class="project-link" target="_blank">
               <img src="basic.png" class="img-fluid certificates" />
+              
+              <p class="title">SheCodes Intro to Coding
             </div>
             <div class="col-sm p-3">
+              <a href="https://www.shecodes.io/certificates/81bff47af6504862811f4d7e50857a86" 
+              class="project-link" target="_blank">
               <img src="frontenddevelopment.png" class="img-fluid certificates" />
+              <p class="title">SheCodes Front-End Development
             </div>
             <div class="col-sm p-3">
-              <img src="plus.png" class="img-fluid certificates" />
+              <a href="https://www.shecodes.io/certificates/b5b2980b41c2294f4e09ffd73a8d7bbd" 
+              class="project-link" target="_blank">
+              <img src="responsive.png" class="img-fluid certificates" />
+              <p class="title">SheCodes Responsive-Web Development
             </div>
           </div>
         </div>

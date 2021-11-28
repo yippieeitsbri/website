@@ -1,0 +1,140 @@
+
+  
+:root {
+  --primary-color: #f096d7;
+  --secondary-color: #fac2ea;
+}
+
+body {
+  text-align: center;
+  font-family: Calibri, "Trebuchet MS", sans-serif;
+  font-size: 12px;
+  background-color: lightyellow;
+  background-size: cover;
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  color: rgba(240, 9, 174, 0.8);
+  font-size: 60px;
+  word-spacing: 1px;
+  line-height: 35px;
+}
+
+h2 {
+  font-family: "Yeseva One", cursive;
+  color: rgba(240, 9, 174, 0.8);
+  font-size: 34px;
+  word-spacing: 1px;
+  line-height: 35px;
+}
+
+h3 {
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+h4 {
+  font-size: 25px;
+  color: var(--primary-color);
+  font-family: "Yeseva One", cursive;
+  padding-top: 15px;
+  text-decoration: underline;
+  line-height: 20px;
+}
+
+p {
+  color: var(--primary-color);
+  font-size: 12px;
+}
+
+footer {
+  padding-top: 15px;
+}
+.enter {
+  background-color: lightyellow;
+  color: rgba(240, 9, 174, 0.8);
+  border-radius: 10px;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  padding-top: 5px;
+  padding-bottom: 4px;
+  text-decoration: none;
+}
+.enter:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+.text-container {
+  padding-top: 150px;
+  padding-bottom: 15px;
+}
+.project-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  line-height: 15px;
+  padding-bottom: 10px;
+}
+.project-link:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+.icon,
+.icon-big {
+  color: var(--primary-color);
+  padding: 3px;
+}
+.icon:hover,
+.icon-big:hover {
+  color: var(--secondary-color);
+}
+.icon {
+  font-size: 24px;
+}
+
+.icon-big {
+  font-size: 50px;
+}
+
+.p-section {
+  text-indent: 15px;
+  line-height: 20px;
+  color: rgba(240, 9, 174, 0.8);
+  text-align: left;
+}
+.p-projects {
+  color: rgba(240, 9, 174, 0.8);
+  text-align: center;
+  line-height: 10px;
+}
+.section-container {
+  padding: 20px;
+}
+
+.certificates {
+  border: 1px solid rgba(240, 9, 174, 0.8);
+  border-radius: 4px;
+  max-width: 100%;
+  height: auto;
+}
+
+.padding-top {
+  padding-top: 15px;
+}
+.navbar-brand {
+  font-family: "Dancing Script", cursive;
+  color: var(--primary-color);
+}
+.navbar-brand {
+  font-family: "Dancing Script", cursive;
+  color: var(--primary-color);
+}
+.dropdown-item {
+  background-color: lightyellow;
+  color: rgba(240, 9, 174, 0.8);
+}
+.dropdown-item:hover {
+  background-color: lightyellow;
+  color: var(--secondary-color);
+}
